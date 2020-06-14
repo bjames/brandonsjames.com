@@ -1,0 +1,63 @@
+<body>
+	<div class=about>
+		<img src="me.jpg"></img>
+		<h1>Brandon S. James</h1>
+		<div class=email><a href="MAILTO: brandon@brandonsjames.com">brandon@brandonsjames.com</a></div>
+		<div class=projects>Projects: <a href=https://neverthenetwork.com>ntn</a> (<a href=http://staging.neverthenetwork.com/>ntnv2 preview</a>), <a href=https://github.com/bjames>github</a></div>
+		<div class=social>Social: <a href=https://www.facebook.com/brandon.scott.james/>facebook</a>, <a href=https://www.instagram.com/bjames_tx/>instagram</a>, <a href=https://www.linkedin.com/in/brandonsjames>linkedin</a>, <a href=https://www.strava.com/athletes/8443527>strava</a></div>
+	</div>
+</body>
+<style>
+
+	:root, [data-theme="light"] {
+		--background-color: #fff;
+		--text-color: #444;
+		--link-color: #0a79d4;
+		--secondary-text-color: #767676;
+		--logo-filter: none;
+		--toggle-background-color: #333;
+		--toggle-text-color: #ccc;
+	}
+
+	@media (prefers-color-scheme: dark) {
+
+		:root {
+			--background-color: #333;
+			--text-color: #ccc;
+			--link-color: #6a9ce7;
+			--secondary-text-color: #9b9b9b;
+			--logo-filter: invert(100%);
+			--toggle-background-color: #fff;
+			--toggle-text-color: #444;
+		}
+	} 
+
+	body {
+		background-color: var(--background-color);
+		color: var(--text-color);
+		font-family: monospace;
+		font-size: 2em;
+	}
+	body a {
+		color: var(--link-color);
+	}
+	.about {
+		position: fixed;
+		text-align: center;
+		margin: auto;
+		top: 25%;
+		left: 50%;
+    		transform: translate(-50%, -25%);
+		overflow: auto;
+	}
+	.about .email {
+		margin-bottom: 32px;
+	}
+	.about img {
+		width: 300px;
+		border-radius:50%;	
+	}
+	.about h1 {
+		margin-bottom: 10px;
+	}
+</style>
