@@ -6,8 +6,8 @@
 		<img src="me.jpg"></img>
 		<h1>Brandon S. James</h1>
 		<div class=email><a href="MAILTO: brandon@brandonsjames.com">brandon@brandonsjames.com</a></div>
-		<div class=projects>Projects: <a href=https://neverthenetwork.com>ntn</a> (<a href=http://staging.neverthenetwork.com/>ntnv2 preview</a>), <a href=https://github.com/bjames>github</a></div>
-		<div class=social>Social: <a href=https://www.facebook.com/brandon.scott.james/>facebook</a>, <a href=https://www.instagram.com/bjames_tx/>instagram</a>, <a href=https://www.linkedin.com/in/brandonsjames>linkedin</a>, <a href=https://www.strava.com/athletes/8443527>strava</a></div>
+		<div class=sec>Projects: <a href=https://neverthenetwork.com>neverthenetwork.com</a> (<a href=http://staging.neverthenetwork.com/>ntnv2 preview</a>), <a href=https://github.com/bjames>github</a></div>
+		<div class=sec>Social: <a href=https://www.facebook.com/brandon.scott.james/>facebook</a>, <a href=https://www.instagram.com/bjames_tx/>instagram</a>, <a href=https://www.linkedin.com/in/brandonsjames>linkedin</a>, <a href=https://www.strava.com/athletes/8443527>strava</a></div>
 	</div>
 </body>
 <style>
@@ -41,9 +41,11 @@
 		font-family: monospace;
 		font-size: 2em;
 	}
+	
 	body a {
 		color: var(--link-color);
 	}
+	
 	.about {
 		position: fixed;
 		text-align: center;
@@ -53,16 +55,24 @@
     		transform: translate(-50%, -25%);
 		overflow: auto;
 	}
+	
 	.about .email {
 		margin-bottom: 32px;
 	}
+	
 	.about img {
 		width: 300px;
 		border-radius:50%;	
 	}
+	
 	.about h1 {
 		margin-bottom: 10px;
 	}
+
+	.about .sec {
+		margin-bottom: 10px;
+	}
+
 	@media only screen and (max-width: 1000px) {
 		body {
 			font-size: 1.5em;
